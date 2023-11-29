@@ -1,0 +1,8 @@
+# declare backend_tables as sources
+version: 2
+
+sources:
+  - name: customer_success_prod
+    database: "{{ var('bigquery_project_id') }}"
+    tables:
+        - name: xpm_ccbp_users_login_details 

@@ -1,0 +1,8 @@
+# declare backend_tables as sources
+version: 2
+
+sources:
+  - name: academy_analytics_prod
+    database: "{{ var('bigquery_project_id') }}"
+    tables:
+        - name: ccbp_academy_cba_flow_taskflow_template_task_details_base
